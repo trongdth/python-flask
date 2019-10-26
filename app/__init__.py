@@ -1,7 +1,7 @@
 from flask import Flask, g, redirect, request
 from app.core import db, jwt, configure_app
 from flask_cors import CORS
-from models import *
+from app.models import *
 from app.helpers.response import response_error
 from app.routes import init_routes
 from datetime import datetime
