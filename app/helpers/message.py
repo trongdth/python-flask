@@ -13,6 +13,9 @@ class MESSAGE(object):
 	USER_NOT_FOUND = 'User not found!'
 	PASSWORD_NOT_MATCH = 'Your password is incorrect, Please try again!'
 
+	#Question
+	EMPTY_QUESTION = 'Question list is empty!'
+
 
 class CODE(object):
 	# COMMON ERROR
@@ -24,3 +27,8 @@ class CODE(object):
 	USER_HAS_EMAIL_EXIST_ALREADY = '2000'
 	USER_NOT_FOUND = '2001'
 	PASSWORD_NOT_MATCH = '2002'
+
+	#Question
+
+	EMPTY_QUESTION = '3000'
+

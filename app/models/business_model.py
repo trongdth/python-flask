@@ -4,7 +4,7 @@ from app.models.base import BaseModel
 class BusinessModel(BaseModel):
 
     __tablename__ = 'business_model'
-    __json_public__ = ['name']
+    __json_public__ = ['id', 'name']
 
     name = db.Column(db.String(255))
 

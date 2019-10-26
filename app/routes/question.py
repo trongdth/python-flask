@@ -34,3 +34,16 @@ def add():
     except Exception as ex:
         db.rollback()
         return response_error(str(ex))
+
+
+@question_routes.route('/list', methods=['GET']) 
+@jwt_required 
+def list_question():
+
+    questions = Question.get_list_question()
+
+    arr = []
+    for question in questions:
+        arr.append(question.to_json())
+
+    return response_ok(arr) 

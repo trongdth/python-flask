@@ -48,3 +48,4 @@ def only_admin(f):
 		
 		return f(*args, **kwargs)
 	return wrap
+
