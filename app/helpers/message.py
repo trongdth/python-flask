@@ -5,6 +5,7 @@ class MESSAGE(object):
 	# COMMON ERROR
 	INVALID_PARAMETER = 'please double check your parameters.'
 	INVALID_EMAIL = 'email is invalid'
+	INVALID_PERMISSION = 'invalid permission'
 
 
 	# USER
@@ -17,6 +18,7 @@ class CODE(object):
 	# COMMON ERROR
 	INVALID_PARAMETER = '1000'
 	INVALID_EMAIL = '1001'
+	INVALID_PERMISSION = '1002'
 
 	# USER
 	USER_HAS_EMAIL_EXIST_ALREADY = '2000'

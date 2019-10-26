@@ -2,5 +2,5 @@
 
 
 [User]  --> login/register
-[BM]  --> admin adds [Question] into [BM]
-[User] -- [Answer] --> [BM]
+[BM]  --> admin adds [Question]
+[User] -- [Answer][BM] --> [Question]

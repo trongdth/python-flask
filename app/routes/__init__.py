@@ -1,5 +1,6 @@
 from flask import request, g
 from app.routes.user import user_routes
+from app.routes.question import question_routes
 
 def init_routes(app):
     
@@ -8,3 +9,6 @@ def init_routes(app):
         return 'API'
 
     app.register_blueprint(user_routes)
+    app.register_blueprint(question_routes, url_prefix='/question')
+
+    

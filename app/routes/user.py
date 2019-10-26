@@ -35,7 +35,7 @@ def login():
     if hashed_password != candidate_password:
         return response_error(MESSAGE.PASSWORD_NOT_MATCH, CODE.PASSWORD_NOT_MATCH)
     
-    return create_access_token('ok')
+    return response_ok(create_access_token(identity=user.id, fresh=True))
 
 
 @user_routes.route('/register', methods=['POST'])
